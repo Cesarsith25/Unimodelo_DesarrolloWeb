@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+<body>
+  <form action="">
+    <label for="nombre">NOMBRE: </label>
+    <input type="text" placeholder="Escribe tu nombre" maxlength="20" id="nombre" name="nombre">
+    <br>
+    <label for="correo">CORREO: </label>
+    <input type="email" placeholder="Escribe tu correo electrónico" maxlength="30" id="correo" name="correo">
+    <br>
+    <textarea name="mensaje" id="mensaje" placeholder="Aquí puedes escribir tu mensaje"></textarea>
+  </form>
+</body>
+</html>
+
+<!--
+
+Formulario es un conjunto de campos que el usuario puede llenar para enviar información a un servidor web
+label es para poner un nombre a un campo de formulario
+input es para poner un campo de formulario 
+placeholder es para poner un texto dentro del campo de formulario que desaparece cuando el usuario empieza a escribir
+maxlength es para poner un limite de caracteres que el usuario puede escribir en el campo de formulario
+size es para poner un tamaño al campo de formulario
+required es para hacer que el campo de formulario sea obligatorio
+name es para poner un nombre al campo de formulario que se enviará al servidor web
+readonly es para hacer que el campo de formulario sea de solo lectura
+disabled es para hacer que el campo de formulario esté deshabilitado
+
+inputs
+text: para poner un campo de texto
+email: para poner un campo de correo electrónico
+puede detectar si el correo electrónico es válido o no
+submit: para poner un botón de enviar
+textarea: para poner un campo de texto grande
+
+inputs avanzados
+-password: para poner un campo de contraseña
+-color : para poner un campo de color
+-number: para poner un campo de número puede usarse con minimo y maximo
+-range: para poner un campo de rango debe llevar minimo y maximo
+-url : para poner un campo de url puede detectar si la url es válida o no
+tenemos que si los imputs son soportados en los navegadores pueden ayudarse de:
+https://caniuse.com/
+
+-->
