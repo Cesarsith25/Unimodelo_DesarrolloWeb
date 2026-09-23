@@ -1,28 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+ 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formularios</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
 </head>
 <body>
-  <form action="">
-    <label for="nombre">NOMBRE: </label>
-    <input type="text" placeholder="Escribe tu nombre" maxlength="20" id="nombre" name="nombre">
-    <br>
-    <label for="correo">CORREO: </label>
-    <input type="email" placeholder="Escribe tu correo electrónico" maxlength="30" id="correo" name="correo">
-    <br>
-    <textarea name="mensaje" id="mensaje" placeholder="Aquí puedes escribir tu mensaje"></textarea>
-  </form>
+    <form action=""method="">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" value="Nombre">
+ 
+        <input type="text" placeholder="escribe tu nombre" maxlength="10" size="20" id="Nombre" name="Nombre" required>
+        <br>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" placeholder="escribe tu email" id="Email" name="Email" required>
+        <br>
+        <label for="mensaje">mensaje:</label>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="escribe tu mensaje"></textarea>
+        <br>
+        <label for="carrera">Carrera:</label>
+        <select name="carrera" id="carrera">
+            <option value="dts">dts</option>
+            <option value="diseño">diseño</option>
+            <option value="industrial">industrial</option>
+        </select>
+        <br>
+        <input type="radio" name="genero" value="masculino" id="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" name="genero" value="femenino" id="femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" name="genero" value="otro" id="otro">
+        <label for="otro">Otro</label>
+        <br>
+        <input type="checkbox" name="terminos" id="terminos">
+        <br>
+        <input type="submit"value="Enviar">
+        <input type="submit" value="Enviar"> 
+    </form>
 </body>
 </html>
 
-<!--
-
-Formulario es un conjunto de campos que el usuario puede llenar para enviar información a un servidor web
+<!--formulario es un conjunto de campos que el usuario puede llenar para enviar información a un servidor web
 label es para poner un nombre a un campo de formulario
-input es para poner un campo de formulario 
+input es para poner un campo de formulario
 placeholder es para poner un texto dentro del campo de formulario que desaparece cuando el usuario empieza a escribir
 maxlength es para poner un limite de caracteres que el usuario puede escribir en el campo de formulario
 size es para poner un tamaño al campo de formulario
@@ -30,14 +51,14 @@ required es para hacer que el campo de formulario sea obligatorio
 name es para poner un nombre al campo de formulario que se enviará al servidor web
 readonly es para hacer que el campo de formulario sea de solo lectura
 disabled es para hacer que el campo de formulario esté deshabilitado
-
+ 
 inputs
 text: para poner un campo de texto
 email: para poner un campo de correo electrónico
 puede detectar si el correo electrónico es válido o no
 submit: para poner un botón de enviar
 textarea: para poner un campo de texto grande
-
+ 
 inputs avanzados
 -password: para poner un campo de contraseña
 -color : para poner un campo de color
@@ -45,6 +66,7 @@ inputs avanzados
 -range: para poner un campo de rango debe llevar minimo y maximo
 -url : para poner un campo de url puede detectar si la url es válida o no
 tenemos que si los imputs son soportados en los navegadores pueden ayudarse de:
-https://caniuse.com/
-
+Can I use... Support tables for HTML5, CSS3, etc
+ 
 -->
+ 
