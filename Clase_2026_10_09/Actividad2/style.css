@@ -1,0 +1,82 @@
+/* Selector Universal: "*" 
+Nos permite decirle "todos los elementos css". */
+/*
+* {
+  color:red
+}
+*/
+
+/* Selectores de Etiqueta */
+h1, h2, h3 {
+  color:blue;
+}
+
+p {
+  color:blueviolet;
+}
+
+/* Selectores Descendentes 
+En el ejemplo, nuestro documento HTML tiene 3 párrafos diferentes:
+Uno que está solo, otro dentro de un div y otro dentro de un article que a su vez está dentro de un div.
+Podenos diferenciar los que estpan dentro de un div, anteponiendo la palabra "div".
+Esto aplicará el estilo a los <<p>> (en este ejemplo) que estén contenidos en un div.
+Si después del <<div>> ponemos <<article>>, tomará en cuenta a lo que esté dentro 
+de un article que esté dentro de un div.
+*/
+
+div article p{
+  font-size: 22px;
+  color:green;
+}
+
+p a{
+  color:red;
+}
+
+.small {
+  font-size: 12px;
+}
+
+.grande {
+  font-size: 30px;
+}
+
+/* Podemos combinar selectores, en el ejemplo de abajo, se va a aplicar el estilo a los párrafos de los artículos que tengan la clase 'main'.*/
+.main article p{
+  color:yellow;
+}
+
+/* Selectores Hijos
+Estos nos ayudarán a seleccionar los elementos que estén directamente contenidos en el contenedor indicado del dalo del 'mayor que'. Por ejemplo,
+en el siguiente código (a partir del div), estamos diciendo que se aplique el estilo a los párrafos contenidos en el div directamente. A todos
+los párrfos que estpen fuera del div, o por ejemplo, en otro contrenedor dentro del div, no se les aplicará el estilo.
+*/
+
+div > p {
+  font-size: 26px
+}
+
+/* Selectores de Entrada
+Con estos, se seleccionarán todas las entradas especificadas. Se usan mayormente para formularios.
+*/
+
+input[type]{
+  color:red
+}
+
+input[type="text"]{
+  color:darksalmon
+}
+
+/* Herencia / Inheritance
+Por ejemplo, si le aplicamos un estilo al 'body', se lo aplicará a todo lo que contenga el body. En otras palabras, de no especificar algún otro estilo,
+todo el 'body' heredará las propiedades.
+
+body{
+  color:red
+}
+
+article{
+  color:green
+}
+*/
